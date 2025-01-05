@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I CONNECT</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('');
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1cb5e0, #000851);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            margin-bottom: 15px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            background-color: transparent;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            
+        }
+
+        .container:hover{
+            transform: translateY(-10px);
+            transition-duration: 1s;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .works {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            width: 280px;
+            text-align: left;
+            
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateX(-10px);
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            color: #f5f5f5;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #f1f1f1;
+            margin-top: 10px;
+        }
+
+        
+        .button-container {
+            margin-top: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #ff4081;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            margin: 20px 10px;
+        }
+
+        .btn:hover {
+            background-color: #ff0051;
+            box-shadow: 0 5px 15px rgba(255, 64, 129, 0.4);
+        }
+
+        
+        @media (min-width: 768px) {
+            .works {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+
+            .card {
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="container">
+     
+        <h1><b>POORNIMA INSTITUTE OF ENGINEERING AND <br> TECHNOLOGY</b></h1>
+
+        
+        <div class="works">
+            <div class="card">
+                <h2>Lost &amp; Found</h2>
+                <p>Report lost items with details and photos to help others recover lost belongings.</p>
+            </div>
+            <div class="card">
+                <h2>Marketplace</h2>
+                <p>Explore listings or create your own for buying and selling. Connect directly with students.</p>
+            </div>
+            <div class="card">
+                <h2>Safety Measures</h2>
+                <p>CampusConnect prioritizes safety through strict user verification.</p>
+            </div>
+            <div class="card">
+                <h2>Data Safety</h2>
+                <p>Login is required to access the platform, ensuring your data is secure.</p>
+            </div>
+            <div class="card">
+                <h2>Services</h2>
+                <p>Provide the lost item of student through offline mode.</p>
+            </div>
+            <div class="card">
+                <h2>NO Charges</h2>
+                <p>No charges are applied to collect and report the lost item to students and anyone.</p>
+            </div>
+        </div>
+
+        
+        <div class="button-container">
+            <h2>For Lost Items, Inquire Here:</h2>
+            <a href="lost file.html" class="btn">Get Started</a>
+
+            <h2>For Found Items, Register Here:</h2>
+            <a href="found.html" class="btn">Get Started</a>
+        </div>
+    </div>
+
+</body>
+</html>

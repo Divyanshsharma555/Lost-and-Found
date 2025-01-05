@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOUND ITEMS</title>
+    <link rel="stylesheet" href="lost.css">
+    <script src="lost.js"></script>
+</head>
+<body>
+
+    <h1 class="v"><b>-:FOUND ITEMS:-</b></h1>
+    <hr>
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Search for items..." list="detail" >
+        <datalist id="detail">
+            <option value="Sports Watch"></option>
+            <option value="Football"></option>
+            <option value="Mobile charger"></option>
+            <option value="Shoes"></option>
+            <option value="Tedy Bear"></option>
+            <option value="Book"></option>
+        </datalist>
+    </div>
+    <table id="itemsTable">
+        <tr>
+            <td>
+                <div class="box" onclick="showDetails('Sports Watch', 'This watch was found near Volleyball Ground.')">
+                    <img src="Pictures/watch.webp" alt="Sports Watch"/>
+                    <h2>SPORTS WATCH</h2>
+                    <p>This watch was found near "Volleyball Ground".</p>
+                </div>
+            </td>
+            <td>
+                <div class="box" onclick="showDetails('Football', 'This football was found near 1st Year Department.')">
+                    <img src="Pictures/football.webp" alt="Football"/>
+                    <h2>FOOTBALL</h2>
+                    <p>This football was found near "1st Year Department".</p>
+                </div>
+            </td>
+            <td>
+                <div class="box" onclick="showDetails('Mobile Charger', 'This charger was found near GS-6 Hostel.')">
+                    <img src="Pictures/charger.webp" alt="Mobile Charger"/>
+                    <h2>MOBILE CHARGER</h2>
+                    <p>This charger was found near "GS-6 Hostel".</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="box" onclick="showDetails('Shoes', 'These shoes were found near the library.')">
+                    <img src="Pictures/shoes.webp" alt="Shoes"/>
+                    <h2>SHOES</h2>
+                    <p>These shoes were found near "library".</p>
+                </div>
+            </td>
+            <td>
+                <div class="box" onclick="showDetails('Teddy Bear', 'This teddy bear was found near OAT.')">
+                    <img src="Pictures/teddy.jpg" alt="Teddy Bear"/>
+                    <h2>TEDDY BEAR</h2>
+                    <p>This teddy bear was found near "OAT".</p>
+                </div>
+            </td>
+            <td>
+                <div class="box" onclick="showDetails('Book', 'This book was found near the canteen.')">
+                    <img src="Pictures/rd pd.webp" alt="Book"/>
+                    <h2>BOOK</h2>
+                    <p>This book was found near "canteen".</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <h1 id="pp"><b><i>*****TO COLLECT ITEM PLEASE CONTACT STUDENT WINDOW*****</i></b></h1>
+
+    <!-- Modal for item details -->
+    <div id="detailsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="itemTitle"></h2>
+            <p id="itemDescription"></p>
+        </div>
+    </div>
+
+    <script src="lost.js"></script>
+</body>
+</html>
