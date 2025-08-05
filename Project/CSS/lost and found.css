@@ -1,0 +1,269 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background:transparent;
+    color: #333;
+    scroll-behavior: smooth;
+    line-height: 1.6;
+}
+.move {
+    width: 100%;
+    background-color: #2bfade;
+    padding: 10px 0;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+marquee {
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    color: #c41010;
+}
+
+
+nav {
+    background-color: transparent;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    color: #000000;
+}
+
+header {
+    text-align: center;
+    padding: 100px 0;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    background-image: url(https://www.lostings.com/wp-content/uploads/2023/02/Learning-Facility-Lost-and-Found.png);
+}
+
+header h1 {
+    font-size: 3em;
+    color: #00d4ff;
+    text-shadow: 2px 2px #444;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #ffffff;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.cta-button {
+    background-color: #00d4ff;
+    color: rgb(7, 7, 7);
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #007ba7;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#chat{
+    position: fixed;
+    border: 3px transparent;
+    bottom: 3px;
+    right: 2px;
+    background-color: transparent;
+}
+
+#chat:hover{
+    transform: translateY(-5px);
+}
+#about {
+    background-color: #ffffff;
+    color: #333;
+    padding: 40px 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+    cursor: pointer;
+}
+#about:hover{
+    color: rgb(202, 76, 233);
+}
+
+.campus-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.campus-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.features .box {
+    flex: 1;
+    margin: 20px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 300px;
+    text-align: center;
+}
+
+.features .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    color:red ;
+    cursor: pointer;
+}
+
+.features .box h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.features .box p {
+    font-size: 1.1em;
+}
+.newsletter {
+    background-color: #051a30;
+    color: white;
+    text-align: center;
+    padding: 50px 10%;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #f06595;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    height: 20px;
+}
+footer h4{
+    margin: 0px;
+}
+
+
+#contact {
+    display: inline-block;
+    
+    font-size: 1.1em;
+}
+body {
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: transparent;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo {
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #66daca;
+}
+
+.cta-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #00da0b;
+    transition-duration: 0.8s;
+}
+
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(to right, #6a11);
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="l&f2.css">
+    <link rel="stylesheet" href="CSS/l&f2.css">
 
 </head>
 
@@ -26,21 +26,19 @@
             <p class="message" id="errorMessage">Invalid username or password. Please try again.</p>
         </form>
     </div>
-
-    <script>
-        document.getElementById('loginForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            var username = document.getElementById('username').value;
-            var password = document.getElementById('password').value;
-
-
-            if (username === "admin" && password === "poornima@cs") {
-                window.location.href = "lost and found3.html";
-            } else {
-                document.getElementById('errorMessage').style.display = 'block';
-            }
-        });
-    </script>
+    
+<script>
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+    if (username === "admin" && password === "poornima@cs") {
+        localStorage.setItem('isLoggedIn', 'true');
+        window.location.href = "lost and found3.html";
+    } else {
+        document.getElementById('errorMessage').style.display = 'block';
+    }
+});
+</script>
 </body>
 </html>
